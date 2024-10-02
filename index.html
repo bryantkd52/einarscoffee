@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendita de Café - Einar's Traditional Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado espectacular con fondo de banner -->
+    <header class="main-header" style="background-image: url('imagenes/banner.jpg');">
+        <div class="logo">
+            <h1>Einar's Traditional Coffee</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <span>🛒 Carrito: <span id="cart-count">0</span></span>
+        </div>
+    </header>
+
+    <!-- Sección de productos -->
+    <section class="product-list">
+        <h1>Nuestros Cafés Destacados</h1>
+        <div class="products">
+            <div class="product">
+                <img src="imagenes/cafe1.jpg" alt="Café Tradicional">
+                <h2>Café Tradicional</h2>
+                <p>$99.00 MXN</p>
+                <button onclick="addToCart(1)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/cafe2.jpg" alt="Café Gourmet">
+                <h2>Café Gourmet</h2>
+                <p>$150.00 MXN</p>
+                <button onclick="addToCart(2)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/cafe3.jpg" alt="Taza Personalizada">
+                <h2>Taza Personalizada</h2>
+                <p>$120.00 MXN</p>
+                <button onclick="addToCart(3)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/cafe4.jpg" alt="Café en Grano">
+                <h2>Café en Grano</h2>
+                <p>$180.00 MXN</p>
+                <button onclick="addToCart(4)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/cafe5.jpg" alt="Café Descafeinado">
+                <h2>Café Descafeinado</h2>
+                <p>$130.00 MXN</p>
+                <button onclick="addToCart(5)">Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="imagenes/cafe6.jpg" alt="Café Orgánico">
+                <h2>Café Orgánico</h2>
+                <p>$160.00 MXN</p>
+                <button onclick="addToCart(6)">Agregar al carrito</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ícono de WhatsApp en la esquina inferior derecha -->
+    <a href="https://wa.me/5219616923867" class="whatsapp_float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Imagen en el footer -->
+    <footer>
+        <img src="imagenes/footer_image.jpg" alt="Imagen del pie de página" class="footer-image">
+        <p>&copy; 2024 Einar's Traditional Coffee - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
